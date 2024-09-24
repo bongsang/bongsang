@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='bongsang',  # Package name is 'bongsang'
-    version='0.1.0',
+    version='0.1.4',
     author='Bongsang Kim',
     author_email='happykbs@gmail.com',
     description='A collection of statistics and machine learning libraries under the bongsang package',
@@ -12,6 +12,10 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/bongsang/bongsang',  # Update with your repository URL
     packages=find_packages(),
+    include_package_data=True,  # Include package data specified in MANIFEST.in
+    package_data={
+        'bongsang.datasets': ['*.csv'],
+    },
     install_requires=[
         'numpy>=1.18.0',
         'pandas>=1.0.0',
