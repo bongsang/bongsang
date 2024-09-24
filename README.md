@@ -55,5 +55,5 @@ F-statistic: 11.08 on 1 and 8 DF,  p-value: 0.01039
 ==============================================================
 ```
 
-![Sample](docs/sample.png)
+![Sample](./docs/sample.png)
 
