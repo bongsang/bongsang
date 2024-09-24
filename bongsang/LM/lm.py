@@ -41,11 +41,11 @@ class LM:
 
     def summary(self):
         # Print features and target
-        print("="*100)
+        print("=" * 50)
         print("Linear Regression Summary")
         print("X features: ", self.X.columns.tolist())
         print("y target: ", self.y.name)
-        print("_" * 100)
+        print("_" * 50)
 
         # Compute residuals
         y_pred = self.lm.predict(self.X)

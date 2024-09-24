@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='bongsang',  # Package name is 'bongsang'
-    version='0.1.4',
+    version='0.1.5',
     author='Bongsang Kim',
     author_email='happykbs@gmail.com',
     description='A collection of statistics and machine learning libraries under the bongsang package',
