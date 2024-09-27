@@ -160,3 +160,22 @@ class LM:
         plt.ylabel(self.y.name)
         plt.title("Linear Regression Fit")
         plt.show()
+
+
+if __name__ == "__main__":
+    # Load data
+    BASE_DIR = Path(__file__).resolve().parent
+    data_file = BASE_DIR / "datasets" / "restaurants.csv"
+    data = pd.read_csv(data_file)
+
+    # Fit linear model
+    X = data[["Weight"]]
+    y = data["MPG"]
+    lm = LM(X, y)
+    lm.fit()
+
+    # Summary
+    lm.summary()
+
+    # Plot
+    lm.plot()
